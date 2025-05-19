@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Flutter",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "--dart-define=SUPABASE_URL=your_supabase_project_url",
+                "--dart-define=SUPABASE_ANON_KEY=your_supabase_anon_key"
+            ]
+        }
+    ]
+} 
