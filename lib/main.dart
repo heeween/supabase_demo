@@ -109,9 +109,10 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Future<void> _linkWithGoogle() async {
     try {
-      await supabase.auth.linkIdentity(
+      final response = await supabase.auth.linkIdentity(
         OAuthProvider.google,
       );
+      print('Google sign-in response: $response');
       final user = supabase.auth.currentUser;
       if (user != null) {
         setState(() {
